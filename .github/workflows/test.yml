@@ -1,0 +1,6 @@
+name: Test Workflow
+run-name: ${{ github.actor }} lets test docker
+on: [push]
+jobs:
+  my_job:
+    image: node:20-bookworm-slim
