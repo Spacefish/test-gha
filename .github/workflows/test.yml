@@ -3,6 +3,9 @@ run-name: ${{ github.actor }} lets test docker
 on: [push]
 jobs:
   my_job:
-    image: node:20-bookworm-slim
+    runs-on: ubuntu-latest
+    container:
+      image: node:20-bookworm-slim
+    
     steps:
-      - echo hello containers
+      - run: echo "Hello Containers"
