@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} lets test docker
 on: [push]
 jobs:
   my_job:
-    runs-on: ubuntu-20.04-arm
+    runs-on: ubuntu-20.04
     container:
       image: node:20-bookworm-slim
     
