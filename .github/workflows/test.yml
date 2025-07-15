@@ -10,7 +10,7 @@ jobs:
     steps:
       - run: echo "Hello Containers"
   dotnet_test:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     container:
       image: mcr.microsoft.com/dotnet/sdk:8.0
     
