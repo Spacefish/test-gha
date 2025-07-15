@@ -3,14 +3,15 @@ run-name: ${{ github.actor }} lets test docker
 on: [push]
 jobs:
   my_job:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     container:
       image: node:20-bookworm-slim
     
     steps:
       - run: echo "Hello Containers"
+
   dotnet_test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
     container:
       image: mcr.microsoft.com/dotnet/sdk:8.0
     
