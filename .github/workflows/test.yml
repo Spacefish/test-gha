@@ -4,3 +4,5 @@ on: [push]
 jobs:
   my_job:
     image: node:20-bookworm-slim
+    steps:
+      - echo hello containers
